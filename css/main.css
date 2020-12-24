@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section{
+    padding-top: 70px;
+}
+
+.hover-link-css:hover{
+    color: brown;
+}
+
+.ziseRow{
+    margin-top: 8%;
+}
+
+.txt-area-css{
+    resize: none;
+}
+
+.footer-css{
+    margin-top: 5%;
+}
+
+.footer-img{
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 25px;
+}
