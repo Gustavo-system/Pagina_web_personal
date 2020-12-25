@@ -6,6 +6,19 @@ section{
     padding-top: 70px;
 }
 
+/* inicio */
+
+.img-inicio{
+   width: 380px;
+   height: 380px;
+   border-radius: 15rem;
+}
+
+.div-inicio{
+    background-color: royalblue;
+}
+
+/* otros etilos que ya no me acuerdo de donde eran */
 .hover-link-css:hover{
     color: brown;
 }

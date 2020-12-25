@@ -31,8 +31,14 @@ function isClick(e){
 
 
 function Validaciones(){
-    let aux = false; 
-    if(validacionTexto('#id_nombre') == false || validacionTexto('#id_empresa') == false || validarPhone() == false|| validarEmail() == false){
+    let aux = false;
+
+    const retornoTexto = validacionTexto('#id_nombre');
+    const retornoEmpresa = validacionTexto('#id_empresa');
+    const retornoPhone = validarPhone();
+    const retornoEmail = validarEmail();
+
+    if(retornoTexto == false || retornoEmpresa == false || retornoPhone == false|| retornoEmail == false){
         alert('Compruebe la solicitud de algun campo');
         aux = false;
     }
@@ -42,61 +48,6 @@ function Validaciones(){
 
     return aux;
 }
-
-/*
-function Validaciones(){
-    let aux = false;
-
-    const valUser = new Promise((resolve, reject)=>{
-        if(validacionTexto('#id_nombre') == false){
-            reject('el campo esta incorrecto');
-        }
-        else{
-            resolve('el campo esta correcto');
-        }
-    });
-
-    const valEmpresa = new Promise((resolve, reject)=>{
-        if(validacionTexto('#id_empresa') == false){
-            reject('el campo esta incorrecto');
-        }
-        else{
-            resolve('el campo esta correcto');
-        }
-    });
-
-    valUser.then(response =>{
-        console.log('usuario' + response);
-        return aux = true;
-    }).catch(err =>{
-        console.log('usuario' + err);
-        alert('comprebe el campo nombre')
-        return aux = false;
-    });
-
-    valEmpresa.then(response => {
-        console.log('empresa' + response);
-    }).catch(err =>{
-        console.log('empresa' + err);
-    });
-
-    return aux;
-    
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //validar textos
 function validacionTexto(etiqueta){
