@@ -1,7 +1,7 @@
 Vue.component('about-card',{
     props: ['img', 'tittle', 'info', 'repo'],
     template: `
-    <div class="col">
+    <div class="col col-lg-3 mt-3">
         <div class="card h-100 border-light">
 
             <img :src="img" :alt="tittle" class="card-img-top"/>
@@ -60,6 +60,11 @@ new Vue({
                 nombre: 'Creacion de Paginas Web',
                 img: 'public/img/navegador.png',
                 info:'Creacion de Paginas Web implementando HTML, CSS3, JavaScript'
+            },
+            {
+                nombre: 'ReactJS',
+                img: 'public/img/reactjs.png',
+                info: 'Conocimientos Basicos de ReactJs'
             },
             {
                 nombre: 'Controlador de Versiones',
