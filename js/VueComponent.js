@@ -44,7 +44,8 @@ new Vue({
             {
                 nombre: 'Desarrollo Movil',
                 img: 'public/img/androide.png',
-                info:'Desarrollo de aplicaciones moviles para android implementando Java o Kotlin'
+                info:'Desarrollo de aplicaciones moviles para android implementando Java o Kotlin',
+                repo: 'https://github.com/Gustavo-system/my-pizza-app'
             },
             {
                 nombre: 'Base de Datos',
@@ -69,7 +70,8 @@ new Vue({
             {
                 nombre: 'Controlador de Versiones',
                 img: 'public/img/github.png',
-                info:'Manejo de GIT en GitHub'
+                info:'Manejo de GIT en GitHub',
+                repo:'https://github.com/Gustavo-system'
             }
 
 
