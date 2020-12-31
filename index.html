@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animate.css">
     <!--Script de Vue.js-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
@@ -35,7 +36,7 @@
             alt=""
             loading="lazy"
           />
-          Solar Gaona Gustavo
+          G.S.G.
         </a>
 
         <button
@@ -145,8 +146,8 @@
               <br>
 
               <p>
-                Actualmete curso el penultimo semestre de la Lic. 
-                En sistemas Computacionales en la Universidad Alva Edison <br>
+                Actualmete estoy cursando el último semestre de la Lic. 
+                En sistemas Computacionales en la Universidad Alva Edison.
               </p>
               <br>
               <br>
@@ -171,6 +172,10 @@
 
         <div class="container mt-4">
 
+          <p>Mi nombre es Gustavo Solar Gaona, soy de México y tengo 21 años de edad
+
+          </p>
+
           <p class="text-center font-weight-bolder pb-5 h5">
             TECNOLOGIAS QUE HE APRENDIDO
           </p>
@@ -190,6 +195,24 @@
 
           </div>
 
+          <p class="text-center font-weight-bolder pb-5 h5 mt-5">
+            TECNOLOGIAS QUE ESTOY APRENDIENDO
+          </p>
+
+          <div class="row mt-4" id="Componente-aprendiendo">
+            
+            <about-card
+              v-for="(item, index) in aprendiendo"
+              :key="index"
+              :tittle="item.nombre"
+              :img="item.img"
+              :info="item.info"
+              :repo="item.repo"
+            >
+            </about-card>
+
+          </div>
+
         </div>
 
       </section>
@@ -197,51 +220,51 @@
         <!--Seccion de contactame-->
         <section id="contactame">
           <div class="container mt-4">
-            <p class="text-center font-weight-bolder pb-5 h5">
+            <p class="text-center font-weight-bolder pb-5 h5 animacion">
               COMPLETE EL SIGUENTE FORMULARIO Y EN BREVE ME PONDRE EN CONTACTO CON
               USTED
-          </p>
+            </p>
 
           <div class="row rounded justify-content-center" id="div-nombre">
             <form action="php/validacion.php" method="POST" id="id_form">
               <div class="row form-group">
-                <label for="nombre" class="col-form-label col-md-4">Nombre Completo:</label>
-                <div class="nombre col-md-8">
+                <label for="nombre" class="col-form-label col-md-4 animacion">Nombre Completo:</label>
+                <div class="nombre col-md-8 animacion">
                   <input
                     type="text"
-                    class="form-control text-uppercase"
+                    class="form-control text-uppercase "
                     id="id_nombre"
                   />
                 </div>
               </div>
 
               <div class="row form-group" id="div_empresa">
-                <label for="empresa" class="col-form-label col-md-4">Empresa:</label>
-                <div class="col-md-8">
+                <label for="empresa" class="col-form-label col-md-4 animacion">Empresa:</label>
+                <div class="col-md-8 animacion">
                   <input
                     type="text"
-                    class="form-control text-uppercase"
+                    class="form-control text-uppercase "
                     id="id_empresa"
                   />
                 </div>
               </div>
 
               <div class="row form-group">
-                <label for="nombre" class="col-form-label col-md-4">Número Telefonico:</label>
-                <div class="col-md-8" id="div_number">
+                <label for="nombre" class="col-form-label col-md-4 animacion">Número Telefonico:</label>
+                <div class="col-md-8 animacion" id="div_number">
                   <input 
                     type="text" 
-                    class="form-control" 
+                    class="form-control " 
                     id="id_phoneNumber" 
                   />
                 </div>
               </div>
 
               <div class="row form-group">
-                <label for="correoElectronico" class="col-form-label col-md-4">Correo Electronico:</label>
-                <div class="col-md-8" id="div_email">
-                  <input type="email" class="form-control" id="id_email" />
-                  <small id="" class="form-text text-muted">
+                <label for="correoElectronico" class="col-form-label col-md-4 animacion">Correo Electronico:</label>
+                <div class="col-md-8 animacion" id="div_email">
+                  <input type="email" class="form-control " id="id_email" />
+                  <small id="" class="form-text text-muted ">
                     Los datos proporcionados seran almacenados y utilizados con
                     el fin de comunicarnos con usted lo más pronto posible.
                   </small>
@@ -249,8 +272,8 @@
               </div>
 
               <div class="row form-group">
-                <label for="Textarea" class="col-form-label col-md-4">Asunto:</label>
-                <div class="col-md-8">
+                <label for="Textarea" class="col-form-label col-md-4 animacion ">Asunto:</label>
+                <div class="col-md-8 animacion">
                   <textarea
                     class="form-control txt-area-css text-uppercase"
                     rows="12"
@@ -261,7 +284,7 @@
 
               <button
                 type="submit"
-                class="btn btn-outline-primary btn-block rounded-pill"
+                class="btn btn-outline-primary btn-block rounded-pill animacion"
                 id="id_btn_enviar"
               >
                 Enviar
@@ -325,5 +348,6 @@
 
     <script src="js/app.js"></script>
     <script src="js/VueComponent.js"></script>
+    <script src="js/animaciones.js"></script>
   </body>
 </html>

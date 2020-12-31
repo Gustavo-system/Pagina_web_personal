@@ -1,0 +1,32 @@
+/* Estilos de animaciones en la pagina */
+.animacion{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarArriba{
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba{
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.mostrarAbajo{
+
+}
+/*animacion hacia la izquierda*/
+
+@keyframes animacion-R{
+    0%{
+        transform: translate(3000px, 0);
+    }
+    100%{
+        transform: translate(0);
+    }
+}

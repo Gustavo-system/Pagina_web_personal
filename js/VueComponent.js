@@ -1,7 +1,7 @@
 Vue.component('about-card',{
     props: ['img', 'tittle', 'info', 'repo'],
     template: `
-    <div class="col col-lg-3 mt-3">
+    <div class="col col-lg-3 mt-3 animacion">
         <div class="card h-100 border-light">
 
             <img :src="img" :alt="tittle" class="card-img-top"/>
@@ -39,13 +39,7 @@ new Vue({
             {
                 nombre: 'Python',
                 img: 'public/img/python.png',
-                info:'Implementacion de Python y manipulacion de base de datos'
-            },
-            {
-                nombre: 'Desarrollo Movil',
-                img: 'public/img/androide.png',
-                info:'Desarrollo de aplicaciones moviles para android implementando Java o Kotlin',
-                repo: 'https://github.com/Gustavo-system/my-pizza-app'
+                info:'Programacion Orientada a Objetos, Estructural'
             },
             {
                 nombre: 'Base de Datos',
@@ -60,7 +54,7 @@ new Vue({
             {
                 nombre: 'Creacion de Paginas Web',
                 img: 'public/img/navegador.png',
-                info:'Creacion de Paginas Web implementando HTML, CSS3, JavaScript'
+                info:'Creacion de Paginas Web implementando HTML, CSS3, JavaScript puro'
             },
             {
                 nombre: 'ReactJS',
@@ -71,6 +65,40 @@ new Vue({
                 nombre: 'Controlador de Versiones',
                 img: 'public/img/github.png',
                 info:'Manejo de GIT en GitHub',
+                repo:'https://github.com/Gustavo-system'
+            }
+
+
+        ]
+    }
+})
+
+new Vue({
+    el: '#Componente-aprendiendo',
+    data: {
+        aprendiendo: [
+            {
+                nombre: 'Desarrollo Movil',
+                img: 'public/img/androide.png',
+                info:'Desarrollo de aplicaciones moviles nativas para android implementando Java o Kotlin',
+                repo: 'https://github.com/Gustavo-system/my-pizza-app'
+            },
+            {
+                nombre: 'React Native',
+                img: 'public/img/react-native.png',
+                info:'Creacion de Aplicaciones Multiplataforma',
+                repo:'https://github.com/Gustavo-system'
+            },
+            {
+                nombre: 'Angular',
+                img: 'public/img/angular.png',
+                info:'Creacion de Aplicaciones Web implementando Angular CLI',
+                repo:'https://github.com/Gustavo-system'
+            },
+            {
+                nombre: 'VueJs',
+                img: 'public/img/vue.png',
+                info:'Creacion de Aplicaciones Web implementando Vue',
                 repo:'https://github.com/Gustavo-system'
             }
 
