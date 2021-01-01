@@ -225,8 +225,16 @@
               USTED
             </p>
 
-          <div class="row round1ed justify-content-center" id="div-nombre">
-            <form action="php/envioEmail.php" method="POST" id="id_form">
+          <div class="row round1ed justify-content-center">
+            
+          
+                     
+            <form action="php/envioEmail.php" method="POST">
+            
+            <?php
+              echo 'aqui van si ya se mando el email o no';
+            ?>
+              
               <div class="row form-group">
                 <label for="nombre" class="col-form-label col-md-4 animacion">Nombre Completo:</label>
                 <div class="nombre col-md-8 animacion">
@@ -234,9 +242,12 @@
                     type="text"
                     class="form-control text-uppercase "
                     id="id_nombre"
+                    name="username"
                   />
                 </div>
+                <?php echo 'hola' ?>
               </div>
+              
 
               <div class="row form-group" id="div_empresa">
                 <label for="empresa" class="col-form-label col-md-4 animacion">Empresa:</label>
@@ -245,6 +256,7 @@
                     type="text"
                     class="form-control text-uppercase "
                     id="id_empresa"
+                    name="empresa"
                   />
                 </div>
               </div>
@@ -256,6 +268,7 @@
                     type="text" 
                     class="form-control " 
                     id="id_phoneNumber" 
+                    name="numeroTelefonico"
                   />
                 </div>
               </div>
@@ -263,7 +276,7 @@
               <div class="row form-group">
                 <label for="correoElectronico" class="col-form-label col-md-4 animacion">Correo Electronico:</label>
                 <div class="col-md-8 animacion" id="div_email">
-                  <input type="email" class="form-control " id="id_email" />
+                  <input type="email" class="form-control " id="id_email" name="email"/>
                   <small id="" class="form-text text-muted ">
                     Los datos proporcionados seran almacenados y utilizados con
                     el fin de comunicarnos con usted lo más pronto posible.
@@ -278,6 +291,7 @@
                     class="form-control txt-area-css text-uppercase"
                     rows="12"
                     id="id_asunto"
+                    name="asunto"
                   ></textarea>
                 </div>
               </div>
@@ -286,6 +300,7 @@
                 type="submit"
                 class="btn btn-outline-primary btn-block rounded-pill animacion"
                 id="id_btn_enviar"
+                name="submit"
               >
                 Enviar
               </button>
@@ -346,7 +361,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
 
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
     <script src="js/VueComponent.js"></script>
     <script src="js/animaciones.js"></script>
   </body>
