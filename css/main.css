@@ -21,7 +21,7 @@ section{
     color: #000;
     font-size: 2.5rem;
     cursor: context-menu;
-    font-size: calc(1.7em + 1vw);
+    font-size: calc(1.5em + 1vw);
 }
 
 .text span{
@@ -46,6 +46,11 @@ span.letra{
 /* .hover-link-css:hover{
     color: brown;
 } */
+.img-css{
+    width: 175px;
+    height: 175px;
+    margin: auto;
+}
 
 .txt-area-css{
     resize: none;

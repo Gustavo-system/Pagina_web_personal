@@ -104,7 +104,10 @@
 //     const asunto = document.getElementById('id_asunto').value;
 // }
 
-function validar(){
-    let nombre = document.getElementById("id_nombre").value;
-    
-}
+const formulario =  document.getElementById('formulario');
+
+formulario.addEventListener('submit', (e)=>{
+
+});
+
+

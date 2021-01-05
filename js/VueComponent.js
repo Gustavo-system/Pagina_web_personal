@@ -2,12 +2,12 @@ Vue.component('about-card',{
     props: ['img', 'tittle', 'info', 'repo'],
     template: `
     <div class="col col-lg-3 mt-3 animacion">
-        <div class="card h-100 border-light">
-
-            <img :src="img" :alt="tittle" class="card-img-top"/>
+        <div class="card h-100 border-light mg-fluid">
+            
+            <img :src="img" :alt="tittle" class="img-fluid img-css"/>
 
             <div class="card-body">
-                <h5 class="card-title text-center"> {{ tittle }}</h5>
+                <h5 class="card-title"> {{ tittle }}</h5>
                 <p class="card-text">
                     {{ info }}
                 </p>
