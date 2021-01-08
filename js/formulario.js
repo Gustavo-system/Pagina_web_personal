@@ -28,6 +28,7 @@ function validar(){
     const r_email = validarEmail(email);
 
     if(r_nombre == false || r_empresa == false || r_numero == false || r_email == false){
+        alert('Comprueba los datos solicitados');
         return false;
     }
 

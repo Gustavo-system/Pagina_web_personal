@@ -7,7 +7,7 @@ Vue.component('about-card',{
             <img :src="img" :alt="tittle" class="img-fluid img-css"/>
 
             <div class="card-body">
-                <h5 class="card-title"> {{ tittle }}</h5>
+                <h5 class="card-title text-center"> {{ tittle }}</h5>
                 <p class="card-text">
                     {{ info }}
                 </p>
@@ -80,13 +80,13 @@ new Vue({
             {
                 nombre: 'Desarrollo Movil',
                 img: 'public/img/androide.png',
-                info:'Desarrollo de aplicaciones moviles nativas para android implementando Java o Kotlin',
+                info:'Estoy aprendiendo a desarrollar aplicaciones nativas para Android, utilizando Java o Kotlin.',
                 repo: 'https://github.com/Gustavo-system/my-pizza-app'
             },
             {
                 nombre: 'React Native',
                 img: 'public/img/react-native.png',
-                info:'Creacion de Aplicaciones Multiplataforma',
+                info:'Estoy aprendiendo a desarrollar aplicaciones para IOS y Android con React Native ya que el codigo se puede reutilizar y ahorrar tiempos de elavoracion',
                 repo:'https://github.com/Gustavo-system'
             },
             {

@@ -47,8 +47,14 @@ span.letra{
     color: brown;
 } */
 .img-css{
-    width: 175px;
-    height: 175px;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+}
+
+.img-css-iconos{
+    width: 20px;
+    height: 20px;
     margin: auto;
 }
 

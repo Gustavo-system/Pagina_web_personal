@@ -95,7 +95,8 @@
             <div class="col-md-7 text">
 
               <h1 class="txt-inico text-uppercase">
-                <span>h</span>
+                <span>¡</span>
+                <span class="letra">h</span>
                 <span class="letra">o</span>
                 <span class="letra">l</span>
                 <span class="letra">a</span>
@@ -179,20 +180,63 @@
 
         <div class="container mt-4">
 
-          <p>Mi nombre es Gustavo Solar Gaona, soy de México, tengo 21 años de edad.
-            <br>
-            Actualmete soy estudiante del último semestre de la Lic. 
-            En Sistemas Computacionales en la Universidad Alva Edison.
-            Soy una persona autodidacta, me gusta estar en constante aprendizaje sobre nuevas tecnologias 
-            
-          </p>
+          <div class="row">
+            <div class="col col-md-8">
+              <h4>Sobre mi...</h4>
+              <p>
+                Mi nombre es Gustavo Solar Gaona, soy de la ciudad de Puebla, tengo 21 años de edad.
+                <br>
+                Actualmete soy estudiante, curso el último semestre de la Lic. 
+                en Sistemas Computacionales en la Universidad Alva Edison.
+                <br>
+                Mi gusto por la informatica comenzo a los 16 años, sin embargo 
+                fue hasta los 18 años que decidi estudiar esta carrera universitaria;
+                a pesar de los conocimientos que me brinda la institucion
+                por mi cuenta he tomado cursos online en distintas plataformas 
+                educativas como Udemy, EDTeam y otros en YouTube.
+                <br>
+                Me concidero un persona autodidacta, me gusta estar en constante 
+                aprendizaje sobre nuevas tecnologias para mejora mis habilidades cada día,
+                busco aplicar mis conocimientos en nuevos proyectos para mejorar mi perfil profecional
+                <br>
+                Me gusta el desarrollo de BackEnd teniendo experiencia en distintos proyectos personales 
+                Me gusta la interaccion con las bases de datos
+                <br>
+                Mi objetivo es crear sitemas tecnologicos funcionales que logren un cambio 
+                en el mundo
+              </p>
 
-          <p class="text-center font-weight-bolder pb-5 h5">
+            </div>
+            <div class="col col-md-4">
+              <h5>Datos Personales:</h5>
+
+              <div class="list-group">
+                <label class="list-group-item">
+                  <img src="public/img/whatsapp.png" alt="logo Telefono" class="img-css-iconos ml-3 mr-2">
+                  22 27 73 21 47
+                </label>
+                <label class="list-group-item">
+                  <img src="public/img/email.png" alt="logo Telefono" class="img-css-iconos ml-3 mr-2">
+                  solargustavo85@gmail.com
+                </label>
+                <label class="list-group-item">
+                  <img src="public/img/ubicacion.png" alt="logo Telefono" class="img-css-iconos ml-3 mr-2">
+                  Puebla, Puebla
+                </label>
+              </div>
+
+            </div>            
+
+          </div>
+          
+
+          
+          <!--Primera fila-->
+          <p class="text-center font-weight-bolder pb-4 h5 mt-5">
             TECNOLOGIAS QUE HE APRENDIDO
           </p>
 
-          <!--Primera fila-->
-          <div class="row mt-4" id="Component-conocimientos">
+          <div class="row" id="Component-conocimientos">
             
               <about-card
                 v-for="(item, index) in conocimientos"
@@ -205,12 +249,12 @@
               </about-card>
 
           </div>
-
-          <p class="text-center font-weight-bolder pb-5 h5 mt-5">
+          <!--segunda fila-->
+          <p class="text-center font-weight-bolder pb-4 h5 mt-5">
             TECNOLOGIAS QUE ESTOY APRENDIENDO
           </p>
 
-          <div class="row mt-4" id="Componente-aprendiendo">
+          <div class="row" id="Componente-aprendiendo">
             <about-card
               v-for="(item, index) in aprendiendo"
               :key="index"
@@ -292,7 +336,7 @@
               <div class="col-md-8 animacion">
                 <textarea
                   class="form-control txt-area-css text-uppercase"
-                  rows="12"
+                  rows="8"
                   id="id_asunto"
                   name="asunto"
                 ></textarea>
@@ -335,7 +379,7 @@
 
         <div class="row">
           <div class="col">
-            © 2020 Copyright:
+            © 2021 Copyright:
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">solargustavo85@gmail.com</a>
           </div>
         </div>
