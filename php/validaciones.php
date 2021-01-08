@@ -60,16 +60,18 @@ if(isset($_POST['submit'])){
 		// var_dump(mysqli_error($conexion));
 		// die();
 		if ($guardar) {
-			echo "<script>alert('Los datos han sido almacenados correctamente');</script>";
+			//echo "<script>alert('Los datos han sido almacenados correctamente');</script>";
 			require_once 'envioEmail.php';
+			//header('Location: http://localhost/Pagina_web_personal/#contactame');
 		}
 		else{
 			echo "<script>alert('UPS!!!... Lo lamento, problemas internos, Intentalo más tarde');</script>";
-			//header('Location: http://localhost/Pagina_web_personal/#contactame');
+			//header('Refrese:2; url=http://localhost/Pagina_web_personal/#contactame');
 		}
 		
 	}else{
 		echo "<script>alert('UPS!!!... Lo lamento, problemas en el servidor');</script>";
+		//header('Refrese:2; url=http://localhost/Pagina_web_personal/#contactame');
 	}
 	
 }
