@@ -74,4 +74,4 @@ if(isset($_POST['submit'])){
 	
 }
 
-// header('Location: http://localhost/Pagina_web_personal/#contactame');
+header('Location: http://localhost/Pagina_web_personal/#contactame');

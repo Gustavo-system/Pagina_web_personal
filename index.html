@@ -237,10 +237,10 @@
             
           
                      
-          <form action="php/validaciones.php" method="POST" id="formulario">
+          <form action="php/validaciones.php" method="POST" onsubmit="return validar();">
               
             <div class="row form-group">
-              <label for="nombre" class="col-form-label col-md-4 animacion">Nombre Completo:</label>
+              <label for="nombre" class="col-form-label col-md-4 animacion">Nombre Completo: *</label>
               <div class="nombre col-md-8 animacion">
                 <input
                   type="text"
@@ -253,7 +253,7 @@
               
 
             <div class="row form-group" id="div_empresa">
-              <label for="empresa" class="col-form-label col-md-4 animacion">Empresa:</label>
+              <label for="empresa" class="col-form-label col-md-4 animacion">Empresa: *</label>
               <div class="col-md-8 animacion">
                 <input
                   type="text"
@@ -265,7 +265,7 @@
             </div>
 
             <div class="row form-group">
-              <label for="nombre" class="col-form-label col-md-4 animacion">Número Telefonico:</label>
+              <label for="nombre" class="col-form-label col-md-4 animacion">Número Telefonico: *</label>
               <div class="col-md-8 animacion" id="div_number">
                 <input 
                   type="text" 
@@ -277,7 +277,7 @@
             </div>
 
             <div class="row form-group">
-              <label for="correoElectronico" class="col-form-label col-md-4 animacion">Correo Electronico:</label>
+              <label for="correoElectronico" class="col-form-label col-md-4 animacion">Correo Electronico: *</label>
               <div class="col-md-8 animacion" id="div_email">
                 <input type="email" class="form-control " id="id_email" name="email"/>
                 <small id="" class="form-text text-muted ">
@@ -299,14 +299,14 @@
               </div>
             </div>
 
-              <button
+              <input
                 type="submit"
                 class="btn btn-outline-primary btn-block rounded-pill animacion"
                 id="id_btn_enviar"
                 name="submit"
+                value="Enviar"
               >
-                Enviar
-              </button>
+              </input>
 
             </form>
           </div>
