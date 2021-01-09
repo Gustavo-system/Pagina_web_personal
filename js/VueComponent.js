@@ -34,12 +34,12 @@ new Vue({
             {
                 nombre: 'JavaScript',
                 img: 'public/img/java-script.png',
-                info:'Programador Jr en JavaScript, implementando ES+'
+                info:'Programacion con nuevos estandares JavaScript ES+'
             },
             {
                 nombre: 'Python',
                 img: 'public/img/python.png',
-                info:'Programacion Orientada a Objetos, Estructural'
+                info:'Conocimientos en python, conexion a base de datos y framework flask'
             },
             {
                 nombre: 'Base de Datos',
@@ -54,12 +54,12 @@ new Vue({
             {
                 nombre: 'Creacion de Paginas Web',
                 img: 'public/img/navegador.png',
-                info:'Creacion de Paginas Web implementando HTML, CSS3, JavaScript puro'
+                info:'Creacion de Paginas Web implementando HTML, CSS3, Bootstrap 4'
             },
             {
                 nombre: 'ReactJS',
                 img: 'public/img/reactjs.png',
-                info: 'Conocimientos Basicos de ReactJs'
+                info: 'Conocimientos Basicos de ReactJs con HOOKS y MERS'
             },
             {
                 nombre: 'Controlador de Versiones',

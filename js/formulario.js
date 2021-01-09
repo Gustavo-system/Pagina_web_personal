@@ -74,3 +74,5 @@ const validarEmail = (email) =>{
         UI.alerta('#id_email', 'is-valid');
     }
 }
+
+
