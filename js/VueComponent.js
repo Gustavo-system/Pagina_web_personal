@@ -29,17 +29,17 @@ new Vue({
                 nombre: 'java',
                 img: 'public/img/java.png',
                 info: 'Conocimientos en java',
-                repo: ''
             },
             {
                 nombre: 'JavaScript',
                 img: 'public/img/java-script.png',
-                info:'Programacion con nuevos estandares JavaScript ES+'
+                info:'Programacion con nuevos estandares JavaScript ES+',
+                repo: 'https://github.com/Gustavo-system?tab=repositories&q=&type=&language=javascript'
             },
             {
                 nombre: 'Python',
                 img: 'public/img/python.png',
-                info:'Conocimientos en python, conexion a base de datos y framework flask'
+                info:'Conocimientos en python, conexion a base de datos y framework flask',
             },
             {
                 nombre: 'Base de Datos',
@@ -49,17 +49,19 @@ new Vue({
             {
                 nombre: 'PHP',
                 img: 'public/img/php.png',
-                info:'Implementacion de PHP como BackEnd en paginas web'
+                info:'Implementacion de PHP como BackEnd en paginas web',
+                repo: 'https://github.com/Gustavo-system?tab=repositories&q=&type=&language=php'
             },
             {
                 nombre: 'Creacion de Paginas Web',
                 img: 'public/img/navegador.png',
-                info:'Creacion de Paginas Web implementando HTML, CSS3, Bootstrap 4'
+                info:'Creacion de Paginas Web implementando HTML, CSS3, Bootstrap 4',
+                repo: 'https://github.com/Gustavo-system?tab=repositories&q=&type=&language=html'
             },
             {
                 nombre: 'ReactJS',
                 img: 'public/img/reactjs.png',
-                info: 'Conocimientos Basicos de ReactJs con HOOKS y MERS'
+                info: 'Conocimientos Basicos de ReactJs con HOOKS y MERS',
             },
             {
                 nombre: 'Controlador de Versiones',
@@ -87,19 +89,17 @@ new Vue({
                 nombre: 'React Native',
                 img: 'public/img/react-native.png',
                 info:'Estoy aprendiendo a desarrollar aplicaciones para IOS y Android con React Native ya que el codigo se puede reutilizar y ahorrar tiempos de elavoracion',
-                repo:'https://github.com/Gustavo-system'
             },
             {
                 nombre: 'Angular',
                 img: 'public/img/angular.png',
                 info:'Creacion de Aplicaciones Web implementando Angular CLI',
-                repo:'https://github.com/Gustavo-system'
+                repo:'https://github.com/Gustavo-system?tab=repositories&q=&type=&language=typescript'
             },
             {
                 nombre: 'VueJs',
                 img: 'public/img/vue.png',
                 info:'Creacion de Aplicaciones Web implementando Vue',
-                repo:'https://github.com/Gustavo-system'
             }
 
 

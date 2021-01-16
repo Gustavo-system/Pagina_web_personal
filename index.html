@@ -65,6 +65,12 @@
                 Sobre mi <span class="sr-only">(current)</span>
               </a>
             </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">
+                Habilidades<span class="sr-only">(current)</span>
+              </a>
+            </li>
 
             <li class="nav-item">
               <a class="nav-link" href="#contactame">
@@ -182,9 +188,7 @@
 
       <!-- seccion sobre mi -->
       <section id="AboutMe">
-
         <div class="container mt-4">
-
           <div class="row">
             <div class="col col-md-8 col-sm-12">
               <h4>Sobre mi...</h4>
@@ -238,16 +242,18 @@
             </div>            
 
           </div>
-          
-
-          
+        </div>
+      </section>
+      <!--Fin de sobre mi-->
+    
+      <!--Habilidades-->
+      <section id="habilidades">
+        <div class="container">  
           <!--Primera fila-->
-          <h2 class="text-center font-weight-bolder pb-4 mt-5">
+          <h2 class="text-center font-weight-bolder pb-4 mt-4">
             TECNOLOGIAS QUE HE APRENDIDO
           </h2>
-
           <div class="row" id="Component-conocimientos">
-            
               <about-card
                 v-for="(item, index) in conocimientos"
                 :key="index"
@@ -257,13 +263,12 @@
                 :repo="item.repo"
               >
               </about-card>
-
           </div>
+
           <!--segunda fila-->
           <h2 class="text-center font-weight-bolder pb-4 mt-5">
             TECNOLOGIAS QUE ESTOY APRENDIENDO
           </h2>
-
           <div class="row" id="Componente-aprendiendo">
             <about-card
               v-for="(item, index) in aprendiendo"
@@ -276,8 +281,8 @@
             </about-card>
           </div>
         </div>
-
       </section>
+      <!--Fin de habilidades-->
         
         <!--Seccion de contactame-->
       <section id="contactame">
