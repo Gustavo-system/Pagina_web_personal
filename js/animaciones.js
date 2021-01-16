@@ -5,7 +5,7 @@ const ShowScroll = () => {
     
     for(let i=0; i<animado.length; i++){
         let altura = animado[i].offsetTop;
-        if (altura - 607 < scroll) {
+        if (altura - 610 < scroll) {
             animado[i].style.opacity = 1;
             animado[i].classList.add('mostrarArriba');
         }
