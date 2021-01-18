@@ -55,13 +55,14 @@ new Vue({
             {
                 nombre: 'Creacion de Paginas Web',
                 img: 'public/img/navegador.png',
-                info:'Creacion de Paginas Web implementando HTML, CSS3, Bootstrap 4',
+                info:'Creacion de Paginas Web implementando HTML5, CSS3, Bootstrap 4',
                 repo: 'https://github.com/Gustavo-system?tab=repositories&q=&type=&language=html'
             },
             {
                 nombre: 'ReactJS',
                 img: 'public/img/reactjs.png',
                 info: 'Conocimientos Basicos de ReactJs con HOOKS y MERS',
+                repo: 'https://github.com/Gustavo-system/Buscador-Gifs-React-app'
             },
             {
                 nombre: 'Controlador de Versiones',

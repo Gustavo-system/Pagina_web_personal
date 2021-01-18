@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -15,6 +15,7 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <!-- link css -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/animate.css">
     <!--Script de Vue.js-->
@@ -92,14 +93,14 @@
 
           <div class="row mt-5" >
 
-            <div class="col-md-4 mt-3">
-              <img src="public/img/yo.jpg" alt="foto-persona-gustavo-solar" class="img-fluid rounded-circle ">
+            <div class="col-12 col-xs-12 col-md-4 col-sm-12 mt-3">
+              <img src="public/img/yo.jpg" alt="foto-persona-gustavo-solar" class="img-fluid mx-auto d-block rounded-circle ">
             </div>
             
             <div class="col-md-1"></div>
 
             <br>
-            <div class="col-md-7 text">
+            <div class="col-12 col-xs-12 col-md-7 col-sm-12 text">
 
               <h1 class="txt-inico text-uppercase">
                 <span>¡</span>
@@ -190,38 +191,38 @@
       <section id="AboutMe">
         <div class="container mt-4">
           <div class="row">
-            <div class="col col-md-8 col-sm-12">
-              <h4>Sobre mi...</h4>
+            <div class="col-12 col-sm-12 col-md-7 col-lg-8  me-css">
+              <h3 class="mb-4">Sobre mi...</h3>
+
               <p>
-                Mi nombre es Gustavo Solar Gaona, soy de la ciudad de Puebla, tengo 21 años de edad.
-                <br>
-                Estudio en la Universidad Alva Edison.
+                Mi nombre es <b>Gustavo Solar Gaona</b>, tengo 21 años de edad.
 			        </p>
 
-			        <p>
-                Mi gusto por la informatica comenzo a los 16 años, sin embargo 
-                fue hasta los 18 años que decidi estudiar esta carrera universitaria;
-                a pesar de los conocimientos que me brinda la institucion
-                por mi cuenta he tomado cursos online en distintas plataformas 
-                educativas como Udemy, EDTeam y otros en YouTube, tambien leyendo la documentacion oficial o en foros.
+              <p>
+                Me concidero un persona autodidacta, responsable, servicial, creativa y ágil. 
+                Me gusta estar en constante aprendizaje sobre nuevas tecnologias para mejora 
+                mis habilidades cada día, busco aplicar mis conocimientos en nuevos proyectos 
+                para mejorar mi perfil profecional.
 			        </p>
 			        <p>
-                Me concidero un persona autodidacta, me gusta estar en constante 
-                aprendizaje sobre nuevas tecnologias para mejora mis habilidades cada día,
-                busco aplicar mis conocimientos en nuevos proyectos para mejorar mi perfil profecional
+                A pesar de los conocimientos que me brinda la institucion, de manera autonoma
+                me he inscrito a cursos online en distintas plataformas 
+                educativas como Udemy, EDTeam y otros en YouTube, 
+                tambien leyendo documentacion oficial o en foros.
 			        </p>
+			        
 				      <ul>
-					      <li>Me gusta el desarrollo de BackEnd teniendo experiencia en distintos proyectos personales</li>
+					      <li>Me gusta el desarrollo BackEnd teniendo experiencia en distintos proyectos personales</li>
 					      <li>Me gusta la interaccion con las bases de datos</li>
 				      </ul>
 			        <p>	
                 Mi objetivo es crear sitemas tecnologicos funcionales que logren un cambio 
-                en el mundo
+                en el mundo.
               </p>
 
             </div>
 
-            <div class="col col-md-4 col-sm-12">
+            <div class="col-12 col-sm-12 col-md-5 col-lg-4">
               <h5>Datos Personales:</h5>
 
               <div class="list-group">
@@ -242,6 +243,30 @@
             </div>            
 
           </div>
+          
+          <!-- pasatempos -->
+          <div class="container text-center mt-5">  
+            <h4 class="mb-4">Pasatiempos y hobbies</h4>
+
+            <div class="row">
+
+              <div class="col-12 col-xs-4 col-ms-4 col-md-4">
+                <img src="public/img/ajedrez.png" alt="ajedrez" class="img-css">
+                <p>Jugar Ajedrez</p>
+              </div>
+              <div class="col-12 col-xs-4 col-ms-4 col-md-4">
+                <img src="public/img/basquet.png" alt="ajedrez" class="img-css">
+                <p>Jugar Basquetbol</p>
+              </div>
+              <div class="col-12 col-xs-4 col-ms-4 col-md-4">
+                <img src="public/img/bici.png" alt="ajedrez" class="img-css">
+                <p>Andar en Bicicleta</p>
+              </div>
+
+            </div>
+          </div>
+          <!-- fin pasatempos -->
+
         </div>
       </section>
       <!--Fin de sobre mi-->
@@ -292,34 +317,33 @@
             USTED
           </p>
 
-        <div class="row round1ed justify-content-center">
-            
-          
-                     
+        <div class="row round1ed justify-content-center">        
           <form action="php/validaciones.php" method="POST" onsubmit="return validar();">
               
             <div class="row form-group">
               <label for="nombre" class="col-form-label col-md-4 animacion">Nombre Completo: *</label>
-              <div class="nombre col-md-8 animacion">
+              <div class="nombre col-md-8 animacion" id="div_nombre">
                 <input
                   type="text"
                   class="form-control text-uppercase"
                   id="id_nombre"
                   name="username"
                 />
+                <small class="error" id="error_nombre">El nombre no puede estar vacio y tampoco contiene numeros.</small>
               </div>
             </div>
               
 
-            <div class="row form-group" id="div_empresa">
+            <div class="row form-group">
               <label for="empresa" class="col-form-label col-md-4 animacion">Empresa: *</label>
-              <div class="col-md-8 animacion">
+              <div class="col-md-8 animacion" id="div_empresa">
                 <input
                   type="text"
                   class="form-control text-uppercase "
                   id="id_empresa"
                   name="empresa"
                 />
+                <small class="error" id="error_empresa">Este campo no puede estar vacio.</small>
               </div>
             </div>
 
@@ -332,14 +356,22 @@
                   id="id_phoneNumber" 
                   name="numeroTelefonico"
                 />
+                <small class="error" id="error_numero">Solo son numeros y no mayor a 10 digitos.</small>
               </div>
             </div>
 
             <div class="row form-group">
               <label for="correoElectronico" class="col-form-label col-md-4 animacion">Correo Electronico: *</label>
               <div class="col-md-8 animacion" id="div_email">
-                <input type="email" class="form-control " id="id_email" name="email"/>
-                <small id="" class="form-text text-muted ">
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  id="id_email" 
+                  name="email" 
+                  placeholder="ejemplo@ejemplo.com"
+                />
+                <small class="error" id="error_email">Ingrese un correo electronico correcto ( ejemplo@ejemplo.com ).</small>
+                <small class="form-text text-muted">
 					        Los datos proporcionados seran unicamenta almacenados y no se hara mal uso ellos. 
                 </small>
               </div>
@@ -378,7 +410,7 @@
       
         <div class="row">
           <div class="col text-center">
-            <a href="">
+            <a href="https://www.facebook.com/profile.php?id=100005351266456">
               <img src="public/img/facebook.png" class="img-fluid footer-img" alt="">
             </a>
             <a href="">

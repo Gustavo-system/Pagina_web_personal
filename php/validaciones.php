@@ -62,6 +62,7 @@ if(isset($_POST['submit'])){
 		if ($guardar) {
 			//echo "<script>alert('Los datos han sido almacenados correctamente');</script>";
 			require_once 'envioEmail.php';
+			// echo "<script>alert('gracias en breve me pondre en contacto con usted');</script>";
 			//header('Location: http://localhost/Pagina_web_personal/#contactame');
 		}
 		else{
