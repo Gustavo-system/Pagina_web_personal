@@ -1,78 +1,76 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
-section{
-    padding-top: 70px;
+section {
+	padding-top: 70px;
 }
 /*Estilos generales*/
 
-
-footer{
-    background-color: rgba(3, 3, 3, 0.808);
-    color: #fff;
+footer {
+	background-color: rgba(3, 3, 3, 0.808);
+	color: #fff;
 }
 
 /* inicio */
-.text h1{
-    color: #000;
-    font-size: 2.5rem;
-    cursor: context-menu;
-    font-size: calc(1.5em + 1vw);
+.text h1 {
+	color: #000;
+	font-size: 2.5rem;
+	cursor: context-menu;
+	font-size: calc(1.5em + 1vw);
 }
 
-.text span{
-    display: inline-block;
+.text span {
+	display: inline-block;
 }
 
-span:hover{
-    color: #48CFAD;
-    transition: all .4s;
-    transform: scaleY(1.3);
+span:hover {
+	color: #48cfad;
+	transition: all 0.4s;
+	transform: scaleY(1.3);
 }
 
-span.l-name{
-    color: #ED5565;
+span.l-name {
+	color: #ed5565;
 }
 
-span.letra{
-    margin-left: -8px;
+span.letra {
+	margin-left: -8px;
 }
 
 /* otros etilos que ya no me acuerdo de donde eran */
-.me-css{
-    background-color: rgba(240, 255, 255, 0.904);
+.me-css {
+	background-color: rgba(240, 255, 255, 0.904);
 }
-.img-css{
-    width: 160px;
-    height: 160px;
-    margin: auto;
-}
-
-.img-css-iconos{
-    width: 20px;
-    height: 20px;
-    margin: auto;
+.img-css {
+	width: 160px;
+	height: 160px;
+	margin: auto;
 }
 
-.error{
-    opacity: 0;
-    color: rgb(255, 0, 0);
+.img-css-iconos {
+	width: 20px;
+	height: 20px;
+	margin: auto;
 }
 
-.txt-area-css{
-    resize: none;
+.error {
+	opacity: 0;
+	color: rgb(255, 0, 0);
 }
 
+.txt-area-css {
+	resize: none;
+}
 
 /* Estilos del pie de pagina */
-.footer-css{
-    margin-top: 5%;
+.footer-css {
+	margin-top: 5%;
 }
 
-.footer-img{
-    width: 35px;
-    height: 35px;
-    padding: 0px;
-    margin: 25px;
+.footer-img {
+	width: 35px;
+	height: 35px;
+	padding: 0px;
+	margin: 25px;
 }
